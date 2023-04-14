@@ -49,7 +49,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Walk This Way\",\r\n    \"artist\": \"Aerosmith\",\r\n    \"album\": \"Toys in the Attic\",\r\n    \"release_date\": \"1973-01-01\",\r\n    \"genre\": \"Rock\"\r\n}",
+					"raw": "{\r\n    \"title\": \"Black Smoke Rising\",\r\n    \"artist\": \"Greta Van Fleet\",\r\n    \"album\": \"From the Fires\",\r\n    \"release_date\": \"2017-11-10\",\r\n    \"genre\": \"Hard Rock\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
