@@ -17,13 +17,14 @@ def songs_list(request):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     else:
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        return Response(serializer.errors, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
     
 @api_view(['GET', 'PUT', 'DELETE'])
 def song_detail(request, pk):
     song = get_object_or_404(Song, pk=pk)
     if request.method == 'GET':
-        serializer = SongSerializer(song);
+        serializer = SongSerializer(song)
+        return Response(serializer.data, status=status.HTTP_200_OK)
     elif request.method == 'PUT':
         serializer = SongSerializer(song, data=request.data)
         serializer.is_valid(raise_exception=True)
